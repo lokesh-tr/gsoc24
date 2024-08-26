@@ -12,6 +12,11 @@ Over the summer, we worked on adding support for expansion of Swift Macros in Vi
 Our project's main goal is to implement a code action in VS Code that allows users
 to view the generated contents of a Swift Macro.
 
+Here's what it looks like to show the generated contents of a Swift Macro in a peeked editor
+when the "Expand Macro" Code Action is invoked by the user:
+
+`TODO: Add Video for Expand Macro from presentation (I guess this will also communicate what a peeked editor is)`
+
 There were also some stretch goals which include:
 
 1. Bringing Semantic Functionality (such as jump-to-defintion, quick help on hover,
@@ -19,8 +24,19 @@ There were also some stretch goals which include:
 2. Allowing to perform the "Expand Macro" Code Action on a macro that is present
    in the generated macro expansion to support the expansion of nested macros.
 
+`TODO: Add Video for Semantic Functionality and Nested Macro`
+
 And as a bonus, we also worked on supporting macro expansions in other LSP-based
 editors which by default cannot make use of the LSP extensions that we introduced.
+
+`TODO: Add Video for other LSP-based editor for example Neovim`
+
+### When can you start using this feature?
+
+This will be available with SourceKit-LSP bundled with Swift 6.1 and the next VS Code
+Swift Extension Release.
+
+For the curious minds, This feature is available in the `main` branch of `sourcekit-lsp` and `vscode-swift`, right now.
 
 ## Implementation Details
 
@@ -86,9 +102,15 @@ export interface GetReferenceDocumentResult {
 
 The way this works is that, we generate the Reference Document URLs from the macro expansions generated using sourcekitd and make a
 `"workspace/peekDocuments"` request to the Editor Client. In VS Code, this executes the `"editor.action.peekLocations"` command
-to present a peeked editor. Since VS Code can't resolve the contents of Reference Document URL, it makes
+to present a peeked editor.
+
+`TODO: Add PeekDocuments Graph`
+
+Since VS Code can't resolve the contents of Reference Document URL, it makes
 a `"workspace/getReferenceDocument"` request to the SourceKit-LSP Server, thereby retrieveing the contents and successfully
 displaying it in the peeked editor.
+
+`TODO: Add GetReferenceDocument Graph`
 
 ### Stretch Goals
 
