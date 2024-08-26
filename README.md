@@ -159,7 +159,7 @@ Code Documentation is also in place for everything that was implemented so far.
      - Migrating `OpenInterfaceRequest` to Reference Document URLs to show Swift Generated Interfaces
        *(Thanks to @ahoppen & @adam-fowler for the idea)*
      - Showing Implicitly generated constructors and Synthesized code upon `Equatable`, `Hashable` and `Codable` Conformances.
-       *(Thanks to @douglas-gregor and @rintaro for pointing this out and some use cases for reference documents in their projects)*
+       *(Thanks to @douglas_gregor and @rintaro for pointing this out and some use cases for reference documents in their projects)*
      - Showing a preview of generated HTML or rendering the generated HTML from the Mustache template engine by hooking up its CLI.
        *(Thanks to @adam-fowler for his feedback on my idea)*
    - These are just few examples, and the fact that you can show various document formats based on various code generation behaviours brings a wide range of possibilities, and hence, you can bring your own idea.
@@ -181,7 +181,7 @@ If not for you two people, this project wouldn't be a success.
 
 - Thanks to @plemarquand for testing out the very first implementation of my project. I certainly didn't expect that. And, it did give me a boost in confidence that the community is very welcoming and also motivated me that I'm in my right direction. Also, Thanks to you for offering me some initial guidance on writing end-to-end test cases in vscode-swift and also for reviewing my PRs.
 
-- Thanks to @douglas-gregor and @rintaro for making me realise that you guys have already started finding use cases of my work in your own projects. I certainly didn't expect that the design decision which me and my mentors made would have immediate benefits to the community in its own way.
+- Thanks to @douglas_gregor and @rintaro for making me realise that you guys have already started finding use cases of my work in your own projects. I certainly didn't expect that the design decision which me and my mentors made would have immediate benefits to the community in its own way.
 
 - Thanks to @Matejkob and @parispittman for encouraging me to present my project in conferences whenever and wherever possible.
 
