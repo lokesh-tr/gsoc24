@@ -201,7 +201,7 @@ Code Documentation is also in place for everything that was implemented so far.
      brings a wide range of possibilities, and hence, you can bring your own idea.
    - And with LSP 3.18, this will be standardised across all editors, not just VS Code.
 
-### Thanks & Gratitude
+## Thanks & Gratitude
 
 I offer my deepest gratitude to my mentors @ahoppen and @adam-fowler without whom this journey is impossible. GSoC is not
 only the work of me as a contributor but also the work of my mentors in guiding me and helping me out whenever possible.
@@ -219,7 +219,7 @@ which you did in vscode-swift.
 
 If not for you two people, this project wouldn't be a success.
 
-#### Special Thanks
+### Special Thanks
 
 - I was in the middle of lots of works & exams in my university when GSoC's contributor proposal submission period, I didn't have
 much time to go in detail into any project from any organisation. I always wanted to do some contribution to Swift. Among
@@ -229,7 +229,7 @@ that got me selected in the first place.
 
 - Thanks to @plemarquand for testing out the very first implementation of my project. I certainly didn't expect that. And,
 it did give me a boost in confidence that the community is very welcoming and also motivated me that I'm in my right direction.
-Also, Thanks to you for offering me some initial guidance on writing end-to-end test cases in vscode-swift.
+Also, Thanks to you for offering me some initial guidance on writing end-to-end test cases in vscode-swift and also for reviewing my PRs.
 
 - Thanks to @douglas-gregor and @rintaro for making me realise that you guys have already started finding use cases of my work in
 your own projects. I certainly didn't expect that the design decision which me and my mentors made would have immediate benefits
@@ -244,18 +244,18 @@ successful project.
 (My mentors might have noticed the difference in how I spoke in the first introductory meeting and in the final
 presentation).
 
-### Appendix: Pull Request Stats
+## Appendix: Pull Request Stats
 
-#### Pre-GSoC (Community Bonding Period)
+### Pre-GSoC (Community Bonding Period)
 
 **`sourcekit-lsp [GOOD FIRST ISSUE]`**
 
 1. Change static method `DocumentURI.for(_:testName:)` to an initializer `DocumentURI.init(for:testName:)` [#1348](https://github.com/swiftlang/sourcekit-lsp/pull/1348)
 2. Rename `note` to `notification` throughout the codebase wherever necessary [#1353](https://github.com/swiftlang/sourcekit-lsp/pull/1353)
 
-#### GSoC (Coding Period)
+### GSoC (Coding Period)
 
-##### What got merged?
+#### What got merged?
 
 **`sourcekit-lsp`**
 
@@ -278,11 +278,11 @@ presentation).
 16. Allow VS Code to recognise files with "sourcekit-lsp" scheme to provide Semantic Functionality through SourceKitLSP [#990](https://github.com/swiftlang/vscode-swift/pull/990)
 17. Fix peeked editor closing without reopening with new contents when triggered again at the same position in the same file [#1019](https://github.com/swiftlang/vscode-swift/pull/1019) (Workaround for a bug in VS Code)
 
-##### What should be merged?
+#### What should be merged?
 
 18. Work around `Uri` round-tripping issue in VS Code for `sourcekit-lsp` scheme [#1026](https://github.com/swiftlang/vscode-swift/pull/1026) by @ahoppen
 
-##### What got closed?
+#### What got closed?
 
 **`sourcekit-lsp`**
 
@@ -298,7 +298,7 @@ in favour of #1631
 
 22. Fix semantic functionality not working for macro expansion reference documents due to URL encoding [#1017](https://github.com/swiftlang/vscode-swift/pull/1017) (Workaround for a bug in VS Code) - Closed in favour of #1026 by @ahoppen
 
-##### What has to be done?
+#### What has to be done?
 
 1. Revert [sourcekit-lsp#1636](https://github.com/swiftlang/sourcekit-lsp/pull/1636) when [vscode-swift#1026](https://github.com/swiftlang/vscode-swift/pull/1026) gets merged.
 2. Add test cases for Semantic Functionality in sourcekit-lsp.
