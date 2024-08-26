@@ -2,8 +2,8 @@
 
 Hello Everyone,
 
-I'm Lokesh.T.R from India. I'm a sophomore currently pursuing my bachelor's degree
-in Vel Tech University, Chennai. I'm thrilled to share with you on what I have accomplished
+I'm Lokesh.T.R from India. I'm a sophomore currently pursuing my bachelor's degree in Computer Science and
+Engineering in Vel Tech University, Chennai. I'm thrilled to share with you on what I have accomplished
 over the summer with my mentors @ahoppen and @adam-fowler for Google Summer of Code 2024.
 
 ## Overview
@@ -45,7 +45,7 @@ For the curious minds, This feature is available in the `main` branch of `source
 Let's have a look at three key components that you use in your everyday life in an LSP-based editor (e.g. VS Code):
 
 1. VS Code-Swift Extension (Client):
-   - Primarily acts as a bridge between VS Code and SourceKit-LSP
+   - primarily acts as a bridge between VS Code and SourceKit-LSP
 2. SourceKit-LSP (Server):
    - provides the necessary editor features to VS Code
    - communicates using Language Server Protocol (LSP)
